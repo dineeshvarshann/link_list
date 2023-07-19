@@ -1,0 +1,29 @@
+class dineesh:
+  def __init__(self,Data):
+    self.data=Data
+    self.next=None
+class linklist:
+  def __init__(self):
+    self.head=None
+  def show(self):
+    temp=self.head
+    while temp is not None:
+      print(temp.data)
+      temp=temp.next
+
+N1=linklist()
+N1.head=dineesh("harini")
+N2=dineesh("barani")
+N3=dineesh("diwa")
+N4=dineesh("karnesh")
+N5=dineesh("santhosh")
+N6=dineesh("nisha")
+N7=dineesh("kama")
+N1.head.next=N2
+N2.next=N3
+N3.next=N4
+N4.next=N5
+N5.next=N6
+N6.next=N7
+
+N1.show()
